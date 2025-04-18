@@ -29,6 +29,10 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname, 'views', 'home.html'));
 })
 
+app.get("/landing-beach",(req,res)=>{
+    res.sendFile(path.join(__dirname, 'views', 'landing-beach.html'));
+})
+
 app.listen(8080,()=>{
     console.log("listing to the port 8080");
 })
