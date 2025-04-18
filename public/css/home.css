@@ -1,0 +1,15 @@
+.hamburger{
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+ }
+ .reg:hover{
+    color: rgb(255, 150, 45);
+ }
+ 
+ /* hearder change */
+ .logo{
+    position: relative;
+    left: -108px;
+    right: 10px;
+ }
