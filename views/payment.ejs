@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="circle"></div>
+
+    <% if (typeof error !== 'undefined') { %>
+        <script>
+        Swal.fire({
+           icon: 'warning',
+            title: 'Oops!',
+             text: 'You enter already exist email!'
+             });
+        </script>
+       <% } %>
+
+    <img class="list-img" src="/images/undraw_to-do-list_dzdz.svg" alt="">
+    <div class="list">
+        <div class="img">
+            <img class="selected-img" src= "<%= src  %>"  >
+        </div>
+        <div class="data">
+            <h1>Details</h1>
+            <form  method="post" action="/account">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name" name="data[name]" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <input type="number" placeholder="Number of person" name="data[number]" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email Id" name="data[email]" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calendar"></i>
+                    <input type="date"name="data[date]" >
+                </div>
+
+                <input type="hidden" name="data[src]" value="<%= src %>" required>
+
+
+            <div class="data-btn">
+                <a href="/"><button  type="button" class="data-btn1">Cancel</button></a>
+                <button class="data-btn2">Pay Now</button>
+            </div>
+           </form>
+
+           
+        </div>
+        
+    </div>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>
+    <script src="/js/popup.js"></script> -->
+</body>
+</html>
