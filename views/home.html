@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZERA Resort</title>
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <!-- SwiperJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -20,14 +21,14 @@
             <div class="flex justify-between items-center h-24">
 
                 <!-- Logo -->
-                <div class="logo flex-shrink-0">
+                <div class="flex-shrink-0">
                     <a href="#" class="text-3xl font-serif font-bold tracking-wide text-gray-800">ZERA</a>
                 </div>
 
                 <!-- Right side: Register, My Account, Hamburger -->
                 <div class="flex items-center space-x-8 ml-auto">
-                    <a href="#" class="reg text-2xl text-gray-700 hover:text-black font-medium">Register</a>
-                    <a href="#" class="text-2xl text-gray-700 hover:text-black font-medium">My Account</a>
+                    <a href="#target-section" class="text-2xl text-gray-700 hover:text-black font-medium reg">Register</a>
+                    <a href="/login" class="text-2xl text-gray-700 hover:text-black font-medium">My Account</a>
 
                     <!-- Hamburger Icon -->
                     <button id="menu-toggle" class="text-gray-700 hover:text-black focus:outline-none hamburger">
@@ -46,9 +47,9 @@
         class="fixed top-0 right-0 h-full w-0 bg-white shadow-lg overflow-x-hidden transition-all duration-300 z-50">
         <div class="p-6 space-y-4">
             <button id="close-btn" class="text-gray-700 hover:text-black text-xl float-right">&times;</button>
-            <a href="#" class="block text-gray-700 hover:text-black font-medium">Home</a>
-            <a href="#" class="block text-gray-700 hover:text-black font-medium">About</a>
-            <a href="#" class="block text-gray-700 hover:text-black font-medium">Contact</a>
+            <a href="/" class="block text-gray-700 hover:text-black font-medium">Home</a>
+            <a href="#target-section" class="block text-gray-700 hover:text-black font-medium">About</a>
+            <a href="/contact" class="block text-gray-700 hover:text-black font-medium">Contact</a>
             <a href="#" class="block text-gray-700 hover:text-black font-medium">Reservation</a>
         </div>
     </div>
@@ -73,87 +74,164 @@
             </div>
         </div>
 
-        <!-- Pagination (optional) -->
+        <!-- Pagination  -->
         <div class="swiper-pagination"></div>
 
-        <!-- Navigation buttons (optional) -->
+        <!-- Navigation buttons -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-<!-- Description + Image Side by Side -->
-<div class="w-full h-screen flex flex-col md:flex-row">
-  
-    <!-- Left Box: Description -->
-    <div class="w-full md:w-1/2 h-1/2 md:h-full bg-gray-100 flex items-center justify-center p-10">
-      <div class="text-center">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Welcome to ZERA Resort</h2>
-        <p class="text-lg text-gray-600">
-           
-            Tucked between sun-kissed beaches, lush hills, and untamed trails, Zera Resort is your perfect escape into nature’s finest offerings. Whether you crave the calming rhythm of ocean waves, the serenity of green hilltops, or the thrill of adventure, Zera has it all. Designed for dreamers, explorers, and peace-seekers alike, our resort blends luxury with the wild — offering breathtaking views, heart-racing activities, and moments of pure bliss.
-        </p>
-        <a href="#"
-        class="inline-block px-8 py-3 mt-10 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow hover:bg-blue-100 transition padding-top:2px">
-        Book a Room
-      </a>
-      </div>
-    </div>
-  
-    <!-- Right Box: Image -->
-    <div class="w-full md:w-1/2 h-1/2 md:h-full">
-      <img src="/images/img7.jpg" alt="Resort Image" class="w-full h-full object-cover" />
-    </div>
-  
-  </div>
-  </div>
-<!-- Elegant Footer -->
-<footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white pt-12 pb-8">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
-  
-      <!-- About -->
-      <div>
-        <h3 class="text-2xl font-bold mb-4">ZERA Resort</h3>
-        <p class="text-sm text-gray-400 leading-relaxed">
-          Nestled in the lap of nature, ZERA is your luxurious escape. Experience scenic views, adventure, and tranquility all in one place.
-        </p>
-      </div>
-  
-      <!-- Quick Links -->
-      <div>
-        <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">About Us</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Book a Room</a></li>
-        </ul>
-      </div>
-  
-      <!-- Contact Info -->
-      <div>
-        <h3 class="text-2xl font-bold mb-4">Contact</h3>
-        <p class="text-sm text-gray-400 mb-2"><span class="font-semibold text-white">Email:</span> stay@zeraresort.com</p>
-        <p class="text-sm text-gray-400 mb-2"><span class="font-semibold text-white">Phone:</span> +91 98765 43210</p>
-        <p class="text-sm text-gray-400"><span class="font-semibold text-white">Location:</span> Beachside, Goa, India</p>
-      </div>
-    </div>
-  
-    <!-- Divider -->
-    <div class="border-t border-gray-700 mt-10 pt-6 text-center">
-      <p class="text-sm text-gray-500">&copy; 2025 ZERA Resort. All rights reserved.</p>
-  
-      <!-- Social Media Icons (Optional) -->
-      <div class="flex justify-center space-x-4 mt-4">
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-  </footer>
-  
-  
+    <!-- Description + Image Side by Side -->
+    <div class="w-full h-screen flex flex-col md:flex-row">
 
+        <!-- Left Box: Description -->
+        <div class="w-full md:w-1/2 h-1/2 md:h-full bg-gray-100 flex items-center justify-center p-10">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Welcome to ZERA Resort</h2>
+                <p class="text-lg text-gray-600">
+
+                    Tucked between sun-kissed beaches, lush hills, and untamed trails, Zera Resort is your perfect
+                    escape into nature’s finest offerings. Whether you crave the calming rhythm of ocean waves, the
+                    serenity of green hilltops, or the thrill of adventure, Zera has it all. Designed for dreamers,
+                    explorers, and peace-seekers alike, our resort blends luxury with the wild — offering breathtaking
+                    views, heart-racing activities, and moments of pure bliss.
+                </p>
+                <a href="#target-section"
+                    class="inline-block px-8 py-3 mt-10 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow hover:bg-blue-100 transition padding-top:2px">
+                    Book a Room
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Box: Image -->
+        <div class="w-full md:w-1/2 h-1/2 md:h-full">
+            <img src="/images/img7.jpg" alt="Resort Image" class="w-full h-full object-cover" />
+        </div>
+
+    </div>
+    </div>
+    </div>
+<ssection>
   
+  
+        <div class="max-w-7xl mx-auto px-8">
+          <h2 class="text-4xl font-bold text-center mb-12">Explore Our Resorts</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        </div>
+        </div>
+      </section> 
+      <!-- <div class="area-wrapper">
+        <div class="area-box beach">
+          Beach
+          <span class="hover-text">Explore</span>
+        </div>
+        <div class="area-box greenery">
+          Greenery
+          <span class="hover-text">Explore</span>
+        </div>
+        <div class="area-box hills">
+          Hills
+          <span class="hover-text">Explore</span>
+        </div>
+        <div class="area-box desert">
+          Desert
+          <span class="hover-text">Explore</span>
+        </div>
+        <div class="area-box city">
+          City
+          <span class="hover-text">Explore</span>
+        </div>
+      </div> -->
+
+      <section id="target-section">
+      <div class="area-wrapper"> 
+        <a href="/landing-beach" class="area-box beach">
+          Beach
+          <span class="hover-text">Explore</span>
+        </a>
+      
+        <a href="/landing-greenery" class="area-box greenery">
+          Greenery
+          <span class="hover-text">Explore</span>
+        </a>
+      
+        <a href="/landing-hill" class="area-box hills">
+          Hills
+          <span class="hover-text">Explore</span>
+        </a>
+      
+        <a href="/desert" class="area-box desert">
+          Adventure
+          <span class="hover-text">Explore</span>
+        </a>
+      
+        <a href="/landing-city" class="area-box city">
+          City
+          <span class="hover-text">Explore</span>
+        </a>
+      </div>
+      </section>
+</div>      
+      
+      
+      
+      
+      
+      
+    </div>
+    <!-- Elegant Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- About -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">ZERA Resort</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Nestled in the lap of nature, ZERA is your luxurious escape. Experience scenic views, adventure, and
+                    tranquility all in one place.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Book a Room</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Contact</h3>
+                <p class="text-sm text-gray-400 mb-2"><span class="font-semibold text-white">Email:</span>
+                    stay@zeraresort.com</p>
+                <p class="text-sm text-gray-400 mb-2"><span class="font-semibold text-white">Phone:</span> +91 98765
+                    43210</p>
+                <p class="text-sm text-gray-400"><span class="font-semibold text-white">Location:</span> Beachside, Goa,
+                    India</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+            <p class="text-sm text-gray-500">&copy; 2025 ZERA Resort. All rights reserved.</p>
+
+            <!-- Social Media Icons-->
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -185,7 +263,25 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
+
+       
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+
+  // Attach click event to each image
+  document.querySelectorAll(".expandable-image").forEach((img) => {
+    img.addEventListener("click", () => {
+      modalImage.src = img.src;
+      modal.classList.remove("hidden");
+    });
+  });
+
+  function closeModal() {
+    modal.classList.add("hidden");
+    modalImage.src = "";
+  }
+</script>
+
 
 </body>
 
