@@ -33,6 +33,22 @@ app.get("/landing-beach",(req,res)=>{
     res.sendFile(path.join(__dirname, 'views', 'landing-beach.html'));
 })
 
+app.get("/landing-greenery",(req,res)=>{
+  res.sendFile(path.join(__dirname, 'views', 'landing-greenery.html'));
+})
+
+app.get("/landing-hill",(req,res)=>{
+  res.sendFile(path.join(__dirname, 'views', 'landing-hill.html'));
+})
+
+app.get("/desert",(req,res)=>{
+  res.sendFile(path.join(__dirname, 'views', 'desert.html'));
+})
+
+app.get("/landing-city",(req,res)=>{
+  res.sendFile(path.join(__dirname, 'views', 'landing-city.html'));
+})
+
 app.post("/payment",(req,res)=>{
   const {beach} = req.body;
   res.render("payment.ejs",{src:beach});
