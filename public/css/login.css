@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #3093d8, #72c2f1);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homebtn {
+    padding: 10px;
+    margin: 20px;
+}
+
+.homebtn:hover {
+    background-color: #3093d8;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    height: 400px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+div::before {
+    content: "";
+    background-image: url('/images/login.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+form {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #004d40;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 100%;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #134bc3;
+    box-shadow: 0 0 5px #195def;
+}
+
+.btn {
+    background-color: #3093d8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #134bc3;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+    }
+
+    div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    div::before {
+        width: 100%;
+        height: 200px;
+    }
+
+    form {
+        padding: 30px 20px;
+    }
+
+    label,
+    input,
+    .btn {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px 15px;
+    }
+
+    input[type="text"] {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+}
