@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/mybook.css">
+
+</head>
+<body>
+    <div class="book-container">
+    <h1>My Booking</h1>
+    <div class="row">
+        <div class="col-6 offset-2">
+            <div class="card mt-3" >
+                <img src="<%= data.src %>" class="card-img-top" alt="listing-image">
+            </div>
+        </div>
+        <div class="user-details">
+            <h4>Your Details</h4>
+            <ul type="none">
+                <li><h6>Name:</h6><%= data.name  %></li>
+                <li><h6>Gmail: </h6><%= data.email %></li>
+                <li><h6>Peoples: </h6><%= data.number %></li>
+                <li><h6>Visiting Date: </h6><%= new Date(data.date).toISOString().split('T')[0] %></li>
+            </ul>
+        </div>
+
+    </div>
+    <div>
+        <a href="/"><button>Go To Home</button></a>
+    </div>
+    <img class="new-img" src="/images/undraw_color-palette_5vtb.svg">
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
