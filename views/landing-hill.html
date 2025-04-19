@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/landing-beach.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body >
+    <!-- main head -->
+    <header class="mainHead">
+        <div class="main-logo">
+            <h1>ZeRa</h1>
+        </div>
+        <div class="home">
+            <ul type="none">
+                <li><a href="/">Home</a></li>
+                <li><a href="#target-section">About</a></li>
+                <li><a href="/contact">Conctact</a></li>
+                <li><a href="/faq">FAQs</a></li>
+            </ul>
+            <div class="btn">
+                <button type="button"><i class="fa-solid fa-bars"></i></button>
+
+            </div>
+
+            <!-- nav-bar -->
+            <div class="nav">
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                <ul type="none">
+                    <li>
+                        <h4><a href="/landing-beach">Beach Resort</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="/landing-city">City Resort</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="/landing-hill">Hill Resort</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="/landing-greenery">Greenry Resort</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="/desert">Adventurous Resort</a></h4>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- sliding-img -->
+    <div class="slide-img">
+        <video src="/vids/hill.mp4" height="650" width="100%" control="controls" autoplay loop muted></video>
+    </div>
+
+
+    <!-- Beach -->
+
+    <form id="bookForm" action="/payment" method="POST" style="display: none;">
+        <input type="hidden" name="beach" id="beachInput">
+    </form>
+
+    <div class="beach-bar">
+        <!-- Left Text Section -->
+        <div>
+            <h1 style="margin: 34px; " class="beach-text">Explore our Hill Resort</h1>
+           
+        </div>
+
+        <div class="img-beach">
+            <img class="b-img1"
+                src="https://c4.wallpaperflare.com/wallpaper/244/671/801/pool-in-a-desert-resort-wallpaper-preview.jpg"
+                alt="">
+            <img class="b-img2"
+                src="https://e0.pxfuel.com/wallpapers/594/66/desktop-wallpaper-the-best-ski-resorts-in-europe-2018-readers-choice-awards-conde-ski-town.jpg"
+                alt="">
+            <img class="b-img3" src="https://wallpapercave.com/wp/wp3783015.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="beach-site">
+        <div class="all-left-right-detail">
+            <div class="beach-ditail left-detail">
+                <div class="reosrt-detail">
+                    <h1>Ooty Hill Resort</h1>
+                 
+                    <p>Nestled in the Nilgiri Hills, Ooty offers cool weather, scenic tea gardens, and colonial charm. Ideal for nature walks, boating, and a peaceful escape.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>TamilNadu,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>4500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+
+
+                </div>
+                <div class="detail-right-image-box">
+                    <img class="right-img"
+                        src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzb3J0fGVufDB8fDB8fHww"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="beach-ditail right-detail">
+                <div class="detail-left-image-box">
+                    <img class="left-img"
+                        src="https://w0.peakpx.com/wallpaper/414/244/HD-wallpaper-winter-village-hills-resort-view-mmountain-beautiful-mist-lights-winter-snow-slope-village.jpg"
+                        alt="">
+                </div>
+                <div class="reosrt-detail">
+                    <h1 >Manali Hill Resor</h1>
+                    <p>Surrounded by snow-capped peaks and lush valleys, Manali is a paradise for adventure lovers. From skiing to trekking, it offers year-round excitement.</p>
+                    
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Himachal,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>3500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+
+            <div class="beach-ditail left-detail">
+                <div class="reosrt-detail">
+                    <h1 >Munnar Hill Resort </h1>
+                    <p>Famous for its rolling tea plantations and misty hills. A perfect romantic and nature-filled getaway in South India.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Manali,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>1500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <div class="detail-right-image-box">
+                    <img class="right-img"
+                        src="https://w0.peakpx.com/wallpaper/351/750/HD-wallpaper-seaside-hotel-hills-water-towers-pool-sea.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="beach-ditail right-detail">
+                <div class="detail-left-image-box">
+                    <img class="left-img"
+                        src="https://w0.peakpx.com/wallpaper/42/372/HD-wallpaper-magnificent-resort-hotel-terrace-with-pool-resort-hotel-view-mountains-pool-lounges-terrace.jpg"
+                        alt="">
+                </div>
+                <div class="reosrt-detail">
+                    <h1 >Darjeeling Hill Resort </h1>
+                    <p>Known for its toy train, tea gardens, and panoramic views of Kanchenjunga. A charming hill retreat with a colonial vibe.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Kerala,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>3500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="beach-site ">
+        <div class="all-left-right-detail">
+            <div class="beach-ditail left-detail">
+                <div class="reosrt-detail">
+                    <h1 >Shimla Hill Resort</h1>
+                    <p>A former British summer capital with pleasant weather and heritage buildings. Perfect for leisurely walks on Mall Road and mountain views.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>West Bengal</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>2500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <div class="detail-right-image-box">
+                    <img class="right-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJVRk_ZDjOJprxxp1ehnvrhYpDXOebRBOtfLt9PC7NdIv_dbub6e8T_Ta74-IS6355aQ&usqp=CAU"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="beach-ditail right-detail">
+                <div class="detail-left-image-box">
+                    <img class="left-img"
+                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/390425882.jpg?k=990681ae59c9d3ab3d2c79133a8e8869f069335f66ac707c0cdc960ddade1777&o=&hp=1"
+                        alt="">
+                </div>
+                <div class="reosrt-detail">
+                    <h1 >Kodaikanal Hill Resortt</h1>
+                    <p>Often called the “Princess of Hill Stations,” Kodaikanal boasts serene lakes, pine forests, and blooming flowers. Ideal for couples and nature lovers.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Himachal,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>4500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+
+            <div class="beach-ditail left-detail">
+                <div class="reosrt-detail">
+                    <h1 >Coorg Hill Resort</h1>
+                    <p>Also known as the “Scotland of India,” Coorg is rich in coffee estates and lush greenery. A tranquil spot for relaxation and plantation stays.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>WestBengal,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>1500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <div class="detail-right-image-box">
+                    <img class="right-img"
+                        src="https://w0.peakpx.com/wallpaper/533/729/HD-wallpaper-vacation-in-mountains-pretty-resort-beautiful-mountain-nice-flowers-hills-hotel-rest-vacation-lovely-view-holiday-relax-greenery-place-sky-slope-summer-nature.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="beach-ditail right-detail">
+                <div class="detail-left-image-box">
+                    <img class="left-img"
+                        src="https://c4.wallpaperflare.com/wallpaper/244/671/801/pool-in-a-desert-resort-wallpaper-preview.jpg"
+                        alt="">
+                </div>
+                <div class="reosrt-detail">
+                    <h1 >Mount Abu Hill Resort</h1>
+                    <p>The only hill station in Rajasthan, known for its cool climate and Dilwara Temples. A unique blend of desert-state culture and hilly serenity</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Kolkata,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>3500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="beach-site">
+        <div class="all-left-right-detail">
+            <div class="beach-ditail left-detail">
+                <div class="reosrt-detail">
+                    <h1 >Mussoorie Hill Resort</h1>
+                    <p>A scenic hill town with colonial charm, waterfalls, and shopping streets. Offers breathtaking views of the Himalayas.</p>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Karnatka,India</p>
+                    </span>
+                    <span><i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>2500/day</p>
+                    </span>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <div class="detail-right-image-box">
+                    <img class="right-img"
+                        src="https://e0.pxfuel.com/wallpapers/594/66/desktop-wallpaper-the-best-ski-resorts-in-europe-2018-readers-choice-awards-conde-ski-town.jpg"
+                        alt="">
+                </div>
+            </div>
+
+        
+      
+
+
+    </div>
+
+ 
+
+      
+
+
+        
+            <!-- footer -->
+             <section id="target-section">
+            <footer>
+                <div class="about">
+                    <h2>About Us</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque aut, asperiores expedita omnis perferendis tenetur
+                        iste assumenda ipsam dolor neque quaerat nesciunt voluptatibus vel. Qui ipsam deserunt rem sint
+                        assumenda.
+                    </p>
+
+                    <div class="icons">
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+                    </div>
+                </div>
+
+                <div class="quick-link">
+                    <h2>Quick Links</h2>
+                    <div class="line"></div>
+                    <ul type="none">
+                        <li><a>About</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Privacy Police</a></li>
+                        <li><a>Help</a></li>
+                        <li><a>Terms Condition</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>contact Us</h2>
+                    <div class="line"></div>
+                    <h4><i class="fa-solid fa-location-dot"></i>548 Garia,Kolkata,west-bangle</h4>
+                    <h4><i class="fa-solid fa-phone"></i>+8936054783</h4>
+                    <h4><i class="fa-solid fa-envelope"></i>unknown@gmail.com</h4>
+                </div>
+            </footer>
+           </section>
+
+            <script src="/js/landing.js"></script>
+            <script src="/js/script.js"></script>
+</body>
+
+</html>
