@@ -143,4 +143,13 @@ html {
   transform: translateY(0);
 }
  
-
+.text-3xl{
+  position: relative;
+    right: 93px;
+    font-size: 2.875rem;
+}
+#menu-toggle{
+  position: absolute;
+  right: 38px;
+  top: 28px;
+}

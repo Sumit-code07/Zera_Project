@@ -74,6 +74,19 @@ body {
     margin: 0;
     color: #444;
 }
+.goto{
+    width: 108px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: rgb(101, 162, 47);
+    color: white;
+    border: 0;
+    transition-duration: 0.7s;
+    font-size:17px;
+}
+.goto:hover{
+    box-shadow: 2px 2px 8px black;
+}
 
     </style>
 </head>
@@ -133,10 +146,11 @@ body {
             <div class="faq-answer">
                 <p>Yes! Our resort is ideally located near popular attractions like [Name of Nearby Attractions]. Whether you enjoy sightseeing, shopping, or adventure, there's something for everyone.</p>
             </div>
+            <a href="/"><button class="goto">Go To Home</button></a>
         </div>
     </div>
 
-     <a href="/"><button>go to home</button></a>
+    
 
     <script>
         document.querySelectorAll('.faq-question').forEach((button) => {
