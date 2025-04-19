@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div>
+        <form id="myForm" method="post">
+            <label for="login">Email:</label>
+            <input type="text" name="email" id="login">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <a href="/"><button class="homebtn">home</button></a>
+    </div>
+
+
+    <% if (typeof error !== "undefined" && error) { %>
+        <script>
+          swal("Oops!", "<%= error %>", "error");
+        </script>
+      <% } %>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const emailInput = document.getElementById('login');
+      
+        form.addEventListener('submit', function(e) {
+          e.preventDefault(); // Prevent the form from submitting right away
+      
+          const userEmail = emailInput.value.trim(); // Get the input value
+      
+          // Set the new action dynamically
+          form.action = '/mybook/' + encodeURIComponent(userEmail);
+      
+          form.submit(); // Submit the form with the new action
+        });
+    </script>
+</body>
+</html>
+
