@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Our Resort</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 32px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.faq-intro {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-question {
+    background-color:#4e84bf;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: rgba(110, 169, 221, 0.288);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #444;
+}
+
+    </style>
+</head>
+<body>
+    <!-- FAQ Section -->
+    <div class="faq-container">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        <p class="faq-intro">Here are some common questions we receive from our guests. If you don’t find the answer you’re looking for, feel free to contact us directly!</p>
+
+        <div class="faq-accordion">
+            <button class="faq-question">What amenities does your resort offer?</button>
+            <div class="faq-answer">
+                <p>Our resort offers a variety of amenities including a swimming pool, fitness center, spa, on-site dining, Wi-Fi, guided tours, and much more. Please visit our Facilities page for a full list.</p>
+            </div>
+
+            <button class="faq-question">How do I make a reservation?</button>
+            <div class="faq-answer">
+                <p>Reservations can be made easily through our website using the Book Now button or by contacting our reservations team via email or phone. You will receive a confirmation once your booking is complete.</p>
+            </div>
+
+            <button class="faq-question">Do you offer special packages or discounts?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer seasonal discounts and exclusive packages for honeymooners, families, and corporate groups. Please check our Offers page for the latest deals!</p>
+            </div>
+
+            <button class="faq-question">Is transportation available from the airport or railway station?</button>
+            <div class="faq-answer">
+                <p>Yes, we provide shuttle services from the nearest airport/railway station at an additional charge. Kindly inform us of your arrival details at least 24 hours in advance to arrange this.</p>
+            </div>
+
+            <button class="faq-question">Are pets allowed at the resort?</button>
+            <div class="faq-answer">
+                <p>We love animals, but our resort is currently a pet-free zone to ensure the comfort of all guests. However, please feel free to contact us for pet-friendly accommodations nearby.</p>
+            </div>
+
+            <button class="faq-question">Can I customize my stay (e.g., special meals, romantic setups)?</button>
+            <div class="faq-answer">
+                <p>Absolutely! We offer tailored experiences for special occasions. Whether it's a candlelight dinner by the beach or a personalized spa treatment, let us know your preferences, and we’ll ensure your stay is unforgettable.</p>
+            </div>
+
+            <button class="faq-question">What is your cancellation policy?</button>
+            <div class="faq-answer">
+                <p>Cancellations are free of charge up to 48 hours before the check-in date. For cancellations within 48 hours, a cancellation fee may apply. Please review our full Cancellation Policy for more details.</p>
+            </div>
+
+            <button class="faq-question">What activities can I do at your resort?</button>
+            <div class="faq-answer">
+                <p>Our resort offers a variety of activities including water sports, nature trails, yoga sessions, cooking classes, and cultural tours. Check out our Activities page for more information.</p>
+            </div>
+
+            <button class="faq-question">Is Wi-Fi available throughout the resort?</button>
+            <div class="faq-answer">
+                <p>Yes, complimentary high-speed Wi-Fi is available in all rooms and public areas of the resort.</p>
+            </div>
+
+            <button class="faq-question">Are there any nearby attractions?</button>
+            <div class="faq-answer">
+                <p>Yes! Our resort is ideally located near popular attractions like [Name of Nearby Attractions]. Whether you enjoy sightseeing, shopping, or adventure, there's something for everyone.</p>
+            </div>
+        </div>
+    </div>
+
+     <a href="/"><button>go to home</button></a>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach((button) => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+
+        // Toggle the display of the answer
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
