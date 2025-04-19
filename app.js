@@ -33,6 +33,11 @@ app.get("/landing-beach",(req,res)=>{
     res.sendFile(path.join(__dirname, 'views', 'landing-beach.html'));
 })
 
+app.post("/payment",(req,res)=>{
+  const {beach} = req.body;
+  res.render("payment.ejs",{src:beach});
+})
+
 app.listen(8080,()=>{
     console.log("listing to the port 8080");
 })
